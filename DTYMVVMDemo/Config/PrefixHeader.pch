@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  DTYMVVMDemo
+//
+//  Created by 董天燚 on 2019/4/10.
+//  Copyright © 2019 董天燚. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import"AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "Config.h"
+#import "Tools.h"
+#import "SVProgressHUD.h"
+#import "HLAutoViewDefine.h"
+
+#endif /* PrefixHeader_pch */
