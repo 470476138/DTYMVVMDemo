@@ -26,24 +26,9 @@ typedef void (^ReturnValueBlockType) (id returnValue, WeboRequsetType);
 @interface PublicWeiboViewModel : NSObject
 
 @property (nonatomic,weak) id<PublicWeiboViewModelRequstDelegate> delegate;
-//@property (copy, nonatomic) ReturnValueBlockType returnBlock;
-//@property (copy, nonatomic) ErrorCodeBlock errorBlock;
-//@property (copy, nonatomic) FailureBlock failureBlock;
-
-
-// 传入交互的Block块
-//- (void)setBlockWithReturnBlock: (ReturnValueBlockType) returnBlock
-//                 WithErrorBlock: (ErrorCodeBlock) errorBlock
-//               WithFailureBlock: (FailureBlock) failureBlock;
 /**
  获取围脖列表
  */
 - (void)fetchPublicWeiBo;
-
-
-/**
- 其他数据处理
- */
--(void)otherDataFetch;
 
 @end

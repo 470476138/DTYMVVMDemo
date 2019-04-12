@@ -22,7 +22,7 @@
 }
 
 - (void)createView{
-    UIButton * button = [[UIButton alloc] initWithFrame:CGRectMake(200, 100, 100, 21)];
+    UIButton * button = [[UIButton alloc] initWithFrame:CGRectMake(130, 100, 150, 21)];
     button.titleLabel.textAlignment = NSTextAlignmentCenter;
     [button setTitleColor:colorWithHexString(@"666666ff") forState:UIControlStateNormal] ;
     [button setTitle:@"查看公共微博" forState:UIControlStateNormal];

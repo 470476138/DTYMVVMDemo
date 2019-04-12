@@ -200,7 +200,6 @@
 				A5164426225D891100E94FDF /* DTYMVVMDemo */,
 				A516443F225D891300E94FDF /* DTYMVVMDemoTests */,
 				A516444A225D891300E94FDF /* DTYMVVMDemoUITests */,
-				A5164425225D891100E94FDF /* Products */,
 				13C0A97E0385BAD0BFC637F7 /* Pods */,
 				FBE99E26F410E9A95603C155 /* Frameworks */,
 			);
@@ -214,6 +213,7 @@
 				A5164447225D891300E94FDF /* DTYMVVMDemoUITests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A5164426225D891100E94FDF /* DTYMVVMDemo */ = {
@@ -240,6 +240,7 @@
 		A516443F225D891300E94FDF /* DTYMVVMDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				A5164425225D891100E94FDF /* Products */,
 				A5164440225D891300E94FDF /* DTYMVVMDemoTests.m */,
 				A5164442225D891300E94FDF /* Info.plist */,
 			);

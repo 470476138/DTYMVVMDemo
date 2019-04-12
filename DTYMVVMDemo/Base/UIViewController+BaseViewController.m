@@ -15,16 +15,19 @@
     static dispatch_once_t onceTonken;
     dispatch_once(&onceTonken, ^{
         [self zm_swizzleInstanceMethodWithSrcClass:[self class]
-                                            srcSel:@selector(viewWillAppear:)
-                                       swizzledSel:@selector(zm_ViewWillAppear:)];;
+                                            srcSel:@selector(viewDidLoad)
+                                       swizzledSel:@selector(zm_viewDidLoad)];;
     });
 }
 
-- (void)zm_ViewWillAppear:(BOOL)animated{
-    //此处调用自己其实就是调用UIViewController的viewWillAppear的原生实现方法。
-    [self zm_ViewWillAppear:animated];
+- (void)zm_viewDidLoad{
     //可以统一调整布局、添加统计代码等等
-    self.view.backgroundColor = [UIColor orangeColor];
+    if ([NSStringFromClass([self class]) rangeOfString:@"ViewController"].location !=NSNotFound) {
+        self.view.backgroundColor = [UIColor orangeColor];
+    }
+    //此处调用自己其实就是调用UIViewController的viewWillAppear的原生实现方法。
+    [self zm_viewDidLoad];
+    
 }
 
 /**

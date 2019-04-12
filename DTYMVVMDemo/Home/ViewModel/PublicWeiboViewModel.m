@@ -16,16 +16,6 @@
 
 @implementation PublicWeiboViewModel
 
-//#pragma 接收传过来的block
-//- (void)setBlockWithReturnBlock: (ReturnValueBlockType) returnBlock
-//                 WithErrorBlock: (ErrorCodeBlock) errorBlock
-//               WithFailureBlock: (FailureBlock) failureBlock
-//{
-//    _returnBlock = returnBlock;
-//    _errorBlock = errorBlock;
-//    _failureBlock = failureBlock;
-//}
-
 /**
  获取公共微博
  */
